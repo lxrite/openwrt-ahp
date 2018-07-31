@@ -6,7 +6,7 @@ PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/lxrite/azure-http-proxy.git
-PKG_SOURCE_VERSION:=f34d333cc7bd96454d8e84743103f601f1952212
+PKG_SOURCE_VERSION:=3750c5498b9d6eb4c5008dec101ccbce7221826e
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION)
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION)
@@ -19,7 +19,7 @@ define Package/ahpc
 	CATEGORY:=Network
 	TITLE:= Azure Http Proxy Client
 	URL:=https://github.com/lxrite/azure-http-proxy
-	DEPENDS:=+boost-system +libopenssl +libstdcpp +libatomic
+	DEPENDS:=+libopenssl +libstdcpp
 endef
 
 define Package/ahps
@@ -27,7 +27,7 @@ define Package/ahps
 	CATEGORY:=Network
 	TITLE:= Azure Http Proxy Server
 	URL:=https://github.com/lxrite/azure-http-proxy
-	DEPENDS:=+boost-system +boost-regex +libopenssl +libstdcpp  
+	DEPENDS:=+libopenssl +libstdcpp
 endef
 
 define Package/ahpc/install
