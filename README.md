@@ -4,11 +4,11 @@ AHP for OpenWrt/LEDE
 - 使用 OpenWrt 提供的 [SDK](https://openwrt.org/docs/guide-developer/toolchain/using_the_sdk) 来编译
 
     ```bash
-    # 以 mt7620 为例
+    # 以 mt7620 和 OpenWrt 23.05.0 为例
     # 下载 SDK
-    wget https://downloads.openwrt.org/releases/21.02.1/targets/ramips/mt7620/openwrt-sdk-21.02.1-ramips-mt7620_gcc-8.4.0_musl.Linux-x86_64.tar.xz
-    tar -xf openwrt-sdk-21.02.1-ramips-mt7620_gcc-8.4.0_musl.Linux-x86_64.tar.xz
-    cd openwrt-sdk-21.02.1-ramips-mt7620_gcc-8.4.0_musl.Linux-x86_64
+    wget https://downloads.openwrt.org/releases/23.05.0/targets/ramips/mt7620/openwrt-sdk-23.05.0-ramips-mt7620_gcc-12.3.0_musl.Linux-x86_64.tar.xz
+    tar -xf openwrt-sdk-23.05.0-ramips-mt7620_gcc-12.3.0_musl.Linux-x86_64.tar.xz
+    cd openwrt-sdk-23.05.0-ramips-mt7620_gcc-12.3.0_musl.Linux-x86_64
     # 安装 feeds
     ./scripts/feeds update
     ./scripts/feeds install libstdcpp libopenssl
