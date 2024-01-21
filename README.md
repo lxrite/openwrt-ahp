@@ -11,7 +11,7 @@ AHP for OpenWrt/LEDE
     cd openwrt-sdk-23.05.0-ramips-mt7620_gcc-12.3.0_musl.Linux-x86_64
     # 安装 feeds
     ./scripts/feeds update
-    ./scripts/feeds install libstdcpp libopenssl
+    ./scripts/feeds install libstdcpp
     # 获取 Makefile
     git clone https://github.com/lxrite/openwrt-ahp.git package/ahp
     # 选择要编译的包 Network -> (ahpc ahps)

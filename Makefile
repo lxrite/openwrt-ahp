@@ -1,12 +1,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=ahp
-PKG_VERSION:=1.1.0
+PKG_VERSION:=1.2.0
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/lxrite/azure-http-proxy.git
-PKG_SOURCE_VERSION:=403b0df5da172830d23886b80b91eb06d2d7470a
+PKG_SOURCE_VERSION:=70fb68682204775acc339fa8f78b04dfb29ffe4e
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION)
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION)
@@ -19,7 +19,7 @@ define Package/ahpc
 	CATEGORY:=Network
 	TITLE:= Azure Http Proxy Client
 	URL:=https://github.com/lxrite/azure-http-proxy
-	DEPENDS:=+libopenssl +libstdcpp
+	DEPENDS:=+libstdcpp
 endef
 
 define Package/ahps
@@ -27,7 +27,7 @@ define Package/ahps
 	CATEGORY:=Network
 	TITLE:= Azure Http Proxy Server
 	URL:=https://github.com/lxrite/azure-http-proxy
-	DEPENDS:=+libopenssl +libstdcpp
+	DEPENDS:=+libstdcpp
 endef
 
 define Package/ahpc/install
